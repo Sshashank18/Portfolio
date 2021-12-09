@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.c3026aae.chunk.css",
+    "main.js": "/Portfolio/static/js/main.c9fdc1a4.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.c9fdc1a4.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.e440ee5a.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e440ee5a.js.map",
+    "static/js/2.f02ee89d.chunk.js": "/Portfolio/static/js/2.f02ee89d.chunk.js",
+    "static/js/2.f02ee89d.chunk.js.map": "/Portfolio/static/js/2.f02ee89d.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "precache-manifest.84cd216a8181e3f138973853517a2ab1.js": "/Portfolio/precache-manifest.84cd216a8181e3f138973853517a2ab1.js",
+    "service-worker.js": "/Portfolio/service-worker.js",
+    "static/css/main.c3026aae.chunk.css.map": "/Portfolio/static/css/main.c3026aae.chunk.css.map",
+    "static/js/2.f02ee89d.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.f02ee89d.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Portfolio/static/media/mountains.afcc2c00.jpg",
+    "static/media/image.png": "/Portfolio/static/media/image.ba73b063.png",
+    "static/media/loading.gif": "/Portfolio/static/media/loading.8bf78ed9.gif",
+    "static/media/s_logo.png": "/Portfolio/static/media/s_logo.16cc06ca.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e440ee5a.js",
+    "static/js/2.f02ee89d.chunk.js",
+    "static/css/main.c3026aae.chunk.css",
+    "static/js/main.c9fdc1a4.chunk.js"
+  ]
+}
