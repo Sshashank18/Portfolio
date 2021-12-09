@@ -1,38 +1,620 @@
-.App {
-  text-align: center;
+body{
+    overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.home{
+    width: 100vw;
+    background-attachment: fixed;
+    background-image: url('./mountains.jpg');
+    background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.particle{
+    position: relative;
+}
+
+
+
+
+.svg-bottom {
+    position: sticky;
+    width: 100vw;
+    bottom: 0px;
+    left: 0;
+    z-index: 2;
+}
+
+.svg-top{
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    left: 0;
+    z-index: 2;
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.smallHead{
+    font-family: 'Raleway', sans-serif;
+}
+
+.Name1{
+    font-size:50px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.IntroHome{
+    position: absolute;
+    width: 100vw;
+    margin:0 auto;
+    z-index: 500;
+    padding-top:130px;
+    text-align: center;
+}
+
+.resumeB{
+    background: rgb(0, 0, 0,0);
+	color: inherit;
+	border: 2px solid black;
+	padding: 15px;
+    font-family: 'Raleway';
+    font-size: 15px;
+	cursor: pointer;
+    outline: inherit;
+    border-radius: 10px;
+}
+
+.resumeB>a{
+    text-decoration: none;
+    color:black
+}
+
+.resumeB:hover{
+    background-color: blue;
+    color:white;
+}
+
+
+.IntroHome>h2{
+    font-family: 'Raleway', sans-serif;
+}
+
+.about{
+    background-color: black;
+    color:white;
+    /* height: 100vh; */
+    width:100vw;
+}
+
+.aboutImage{
+    height: inherit;
+}
+
+.aboutContent{
+    position: relative;
+    width:71vw;
+    
+}
+
+.aboutContainer{
+    display: flex;
+}
+
+
+
+.content{
+    position: absolute;
+    width:70%;
+    /* left:650px; */
+    top:170px;
+}
+
+.count{
+    font-size:25px;
+    font-weight: 900;
+}
+
+.left{
+    float: left;
+    margin-right:50px;
+}
+
+.skills{
+    background-color: black;
+    color:white;
+    height: 550px;
+    padding-top: 55px;
+    position: relative;
+    width:100vw;
+}
+
+.heads{
+    position: relative;
+    margin-right:450px;
+
+}
+
+.skillmeter{
+    position: relative;
+    top:179px;
+    /* left:170px; */
+    width: 1000px;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.skillcontainer{
+    width: 100vw;
+    height:100%;
+}
+
+.meter{
+    /* margin-right:150px; */
+    position: relative;
+    padding-bottom:30px;
+}
+
+.backMeter{
+    width: 400px;
+    height: 20px;
+    background-color:#282727;
+}
+
+.perc{
+    color: black;
+    font-weight: bold;
+    padding-right:10px;
+}
+
+.skillName{
+    font-size:20px;
+    font-weight: 500;
+}
+
+.skillLevel{
+    font-size:17px;
+    position: absolute;
+    /* margin-left:200px;    */
+    right:2px;
+}
+
+.navbar{
+    z-index: 600;
+    position: fixed;
+    width:100vw; 
+    background: rgba(209, 156, 156, 0.4);
+}
+.navbar>ul{
+    list-style:none;
+    display: flex; 
+}
+.navbar>ul>li{
+    margin-right:10px; 
+    padding:8px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav-item > .active {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.sideDrawerToggle{
+    display: none;
+}
+
+.projects{
+    background-color: black;
+    color:white;
+    width: 100vw;
+    padding-top: 55px;
+    position: relative;
+}
+
+.projectHeading{
+    position: relative;
+    margin-right:500px;
+    /* width: 850px; */
+    height:350px;
+}
+
+
+.projectContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.Buttons{
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.Buttons>button{
+    border:none;
+    background: none;
+    
+}
+
+.Buttons>button:hover{
+    cursor: pointer;
+}
+
+.Experience{
+    width: 100vw;
+    height: 600px;
+    background-color: black;
+    color:white;
+    padding-top: 30px;
+    position: relative;
+}
+
+.expHeading{
+    position: relative;
+    height:200px;
+    margin-right: 620px;
+}
+
+.Expcontent{
+    height:100%;
+    position: absolute;
+    top:150px;
+    margin-left: 150px;
+}
+
+.ExpContainer{
+    width: 745px;
+    height:100%;
+    margin: 0 auto;
+}
+
+.expTag{
+    width:100%;
+    height: 100%;
+    margin:15px;
+    margin-bottom:50px;
+}
+
+.ExpTagA:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease-out;
+    width: 0;
+    }
+.ExpTagA:hover:after { 
+    width: 100%; 
+    right: auto;
+    left: 0; 
+}
+
+.contact{
+    background-color: black;
+    background-image: url('./components/contact/images/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    color:white;
+    width: 100vw;
+    padding-top: 55px;
+    position: relative;
+    padding-bottom: 50px;
+
+}
+
+.contactHeading{
+    position: relative;
+    margin-right:450px;
+    height:240px;
+}
+
+.contactBox{
+    border-radius: 5px;
+    /* background-color: #f2f2f2; */
+    background-color: black;
+    padding: 20px;
+    width:40%;
+    margin:0 auto;
+    z-index: 100;
+   
+}
+
+.contactHandles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+    margin-top:25px;
+}
+
+.contactHandles>a{
+    color:inherit;
+    text-decoration: none;
+}
+
+.flex{
+    background: #EE0079;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 24px;
+}
+
+
+input[type=text], input[type=email],select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family:'Raleway';
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .subm {
+    background-color: #ffbd39;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top:10px;
+    border-radius: 20px;
+    font-family:'Righteous';
   }
-  to {
-    transform: rotate(360deg);
+
+  .col-75 {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
   }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .contactFooter{
+      color:black;
+      font-family: 'Roboto';
+      font-size:20px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 15px;
+  }
+
+@media(max-width:1085px){
+    .skillmeter{
+        width: unset;
+    }
+    .skills{
+        height: 100%;
+    }
+    .skillcontainer{
+        height: 600px;
+    }
+    .Expcontent{
+        margin-left: 77px;
+    }
+    .ExpContainer{
+        width: unset;
+    }
+}
+
+@media (max-width: 375px){
+    .Name1{
+        font-size:40px;
+    }
+
+    .app{
+        padding-bottom: 200% !important;
+    }
+
+    .App2{
+        margin-left: -10% !important;
+        padding-top:10%;
+        padding-bottom: 50% !important;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .IntroHome{
+        position: absolute;
+        padding-top:130px;
+        text-align: center;
+    }       
+
+    .svg-bottom{
+        bottom:-95px;
+    }
+
+    .sideDrawerToggle{
+        display: block;
+        z-index: 700;
+        position: fixed;
+        height: 100%;
+        margin-left: 90%;        
+    }
+
+    .sideDrawerToggle>i{
+        float:right;
+        margin-right: 5%;
+        font-size: 25px;
+        padding-top:30px;
+    }
+
+    .cross{
+        float:left;
+        margin:15px;
+        margin-left:5%;
+    }
+
+    .sideDrawer{
+        z-index: 500;
+        position: fixed;
+        left:40%;
+        height: 100%;
+        width:100%;
+        padding-top:30px;
+        background-color:rgb(15, 15, 15);
+        color:white;
+        text-align: center;
+    }
+
+    .sideDrawer>ul{
+        list-style:none;
+        padding-right:40%;
+        margin-top:50px;
+        /* display: flex;  */
+    }
+    .sideDrawer>ul>li{
+        margin-right:10px; 
+        padding:8px;
+        margin-bottom:15px;
+        cursor: pointer;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .about{
+        height: 100%;
+    }
+
+    .content{
+        position: initial;
+        width: 100%;
+        padding-left:2px;
+
+    }
+
+    .aboutContainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
+    .aboutContent{
+        width:86vw;
+        margin:0 auto;
+        text-align: center;
+    }
+
+    .aboutImage{
+        width:86vw;
+        margin:0 auto;
+    }
+
+    .aboutImage>img{
+        width: 272px !important;
+        display: block;
+        float:none!important;
+        margin-right: 5%!important;
+    }
+
+    .skills{
+        height: 1000px;
+    }
+
+    .heads{
+        position: initial;
+        margin-left:100px;
+        text-align: center;
+        margin-right: 90px;
+    }
+
+    .skillmeter{
+        position: initial;
+    }
+
+    .backMeter{
+        width:250px;
+    }
+
+    .projects{
+        height: 100%;
+    }
+
+    .projectHeading{
+        width:100%;
+        height:350px;
+        position: initial;
+        text-align: center;
+        margin-right: 90px;
+    }
+
+    .projectContainer{
+        padding-left: 0px;
+        height: 100%;
+    }
+    .Buttons{
+        padding-bottom:50px;
+    }
+
+    .expHeading{
+        width:100%;
+        height:150px;
+        position: initial;
+        text-align: center;
+        margin-right: 90px;
+    }
+
+    .expP{
+        font-size: 12px!important;
+    }
+    
+    .expTag{
+        width: 100%;
+        margin:0px -20px 50px 0px;
+    }
+
+    .Expcontent{
+        left:10%;
+        top:150px;
+        margin-right: 10px;
+        margin-left: unset;
+    }
+
+    .ExpContainer{
+        width:unset;
+        margin:unset;
+    }
+
+    .col-75, .subm {
+        width: 100%;
+        margin-top: 0;
+      }
+
+      .contact{
+          height:800px;
+      }
+
+      .contactHeading{
+        width:95%;
+        height: 100px;
+        padding-left: 12px;
+    }
+
+    .contactBox{
+        width:80%;
+    }
 }

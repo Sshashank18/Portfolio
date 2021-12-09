@@ -1,0 +1,104 @@
+  
+:root {
+    --transition-time: 0.5s;
+}
+
+.projectBox{
+    width:550px;
+    height:90%;
+    margin:3px;
+    border-radius:10px;
+    justify-content: space-between;
+    position: relative;
+    transition: var(--transition-time);
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+.projectDescr{
+    position: absolute;
+    top: -30%;
+    transform: translateY(-150px);
+    transition: var(--transition-time);
+}
+
+.projectText{
+    z-index: 100;
+}
+
+.projectHead{
+    font-weight: 400;
+    font-size:35px;
+    font-family:  'Righteous', cursive;
+}
+
+.projectDescription{
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+.projectTags{
+    position: absolute;
+    transform: translateY(50px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transition: var(--transition-time);
+}
+
+.projectBox:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+.projectBox:hover .projectImg{
+    opacity: 0;
+}
+
+.projectBox:hover .projectDescr{
+    transform: translateY(140px);
+}
+
+.projectBox:hover .projectTags{
+    transform: translateY(-90px);
+}
+
+@media (max-width: 375px){
+
+    .projectBox{
+        width: 290px;
+        height: 100%;
+        margin-bottom:10%;
+    }
+
+
+    .projectDescr{
+        position: relative;
+        transform: translateY(0);
+    }
+
+    .projectTags{
+        position: relative;
+        transform: translateY(0);
+    }
+
+    .projectBox:hover{
+        cursor: pointer;
+        background-color: black;
+    }
+    
+    .projectBox:hover .projectImg{
+        opacity: 1;
+    }
+    
+    .projectBox:hover .projectDescr{
+        transform: translateY(0);
+    }
+    
+    .projectBox:hover .projectTags{
+        transform: translateY(0);
+    }
+}    
+

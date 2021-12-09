@@ -1,0 +1,39 @@
+.timelineDivider
+{
+  width:0;
+  height:50%;
+  position: absolute;
+  top:17%;
+  left:50%;
+  border:3px dashed #0096fa6b;
+}
+
+.timelineTraveller
+{
+  position: sticky;
+  top:25%;
+  transform: rotate(90deg);
+  z-index:2;
+  font-size:30px;
+}
+
+.right{
+    width: 500px;
+    position: relative;
+    top:50px;
+    left:170px;
+}
+
+@media(max-width:1085px) and (min-width:376px){
+  .right{
+    padding-left: 82px;
+    left:unset;
+  }
+
+}
+@media (max-width: 375px){
+    .right{
+        width: 80%;
+        left:60px;
+    }
+}

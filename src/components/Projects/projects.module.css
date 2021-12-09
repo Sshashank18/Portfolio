@@ -1,0 +1,32 @@
+.ButtonContainers {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding-top:210px;
+    margin-left:250px;
+    z-index: 600;
+}
+
+.Button {
+    width: 175px;
+    height: inherit;
+    margin: 2%;
+    font-weight: bolder;
+    color: #616161;
+    z-index: 100;
+    border-radius: 5px;
+}
+
+@media (max-width: 375px){
+    .ButtonContainers{
+        margin-left: 0px;
+        height: 50px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-top: 0px;
+    }
+    .Button{
+        width: 25%;
+    }
+}

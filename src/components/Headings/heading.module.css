@@ -1,0 +1,28 @@
+.baseHead{
+    font-size:7vw;
+    font-family:'Poppins', sans-serif;
+    color:#282727;
+    position: absolute;
+    left:60%; 
+    top:-25px;
+}
+
+.topHead{
+    font-size:50px;
+    font-family:'Poppins', sans-serif;
+    position: absolute;
+    /* top:650px; */
+    left:63%; 
+    z-index: 100;
+}
+
+@media (max-width: 375px){
+    .baseHead{
+        position: initial;
+        display: none;
+
+    }
+    .topHead{
+        position: initial;
+    }
+}
